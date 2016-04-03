@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rianeroldan.myapplication.ProductActivity"
+    tools:showIn="@layout/activity_product"
+    android:background="#faf9e1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#319a1a"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/rimmel"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tests on animals"
+        android:id="@+id/checkedTextView"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="25dp"
+        android:textSize="28dp"
+        android:checked="true"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:enabled="false"
+        android:textColor="#319a1a" />
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harmful ingredients"
+        android:id="@+id/checkedTextView1"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/checkedTextView"
+        android:layout_marginTop="25dp"
+        android:textSize="28dp"
+        android:checked="true"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:enabled="false"
+        android:textColor="#319a1a" />
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eco-friendly"
+        android:id="@+id/checkedTextView2"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/checkedTextView1"
+        android:layout_marginTop="25dp"
+        android:textSize="28dp"
+        android:checked="false"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:enabled="false"
+        android:textColor="#319a1a" />
+
+
+</RelativeLayout>
